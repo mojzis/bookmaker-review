@@ -1,0 +1,125 @@
+{
+ "exported": "2026-09-18T19:11:35+00:00",
+ "data_sha": "ae2d19a",
+ "variants": {
+  "color-captions": {
+   "pages": [
+    {
+     "file": "color-captions/page-1.92425cf1.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "kostel",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 291.3
+       },
+       "version": "27affdbf"
+      },
+      {
+       "panel_id": "kopec",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 291.3
+       },
+       "version": "ed055927"
+      },
+      {
+       "panel_id": "seznam",
+       "box": {
+        "x": 48.0,
+        "y": 395.3,
+        "w": 364.0,
+        "h": 276.3
+       },
+       "version": "f4c48125"
+      },
+      {
+       "panel_id": "priprava",
+       "box": {
+        "x": 428.0,
+        "y": 395.3,
+        "w": 364.0,
+        "h": 276.3
+       },
+       "version": "020cdab1"
+      },
+      {
+       "panel_id": "pochodne",
+       "box": {
+        "x": 48.0,
+        "y": 687.5,
+        "w": 744.0,
+        "h": 452.5
+       },
+       "version": "c2166635"
+      }
+     ]
+    },
+    {
+     "file": "color-captions/page-2.8c1cc350.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "jeskyne",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 240.9
+       },
+       "version": "4886f1cf"
+      },
+      {
+       "panel_id": "beeetlem",
+       "box": {
+        "x": 428.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 240.9
+       },
+       "version": "13e3f496"
+      },
+      {
+       "panel_id": "vidini",
+       "box": {
+        "x": 48.0,
+        "y": 304.9,
+        "w": 744.0,
+        "h": 417.9
+       },
+       "version": "22b69d21"
+      },
+      {
+       "panel_id": "doma",
+       "box": {
+        "x": 48.0,
+        "y": 738.8,
+        "w": 744.0,
+        "h": 401.2
+       },
+       "version": "69933b86"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "kostel": "27affdbf",
+    "kopec": "ed055927",
+    "seznam": "f4c48125",
+    "priprava": "020cdab1",
+    "pochodne": "c2166635",
+    "jeskyne": "4886f1cf",
+    "beeetlem": "13e3f496",
+    "vidini": "22b69d21",
+    "doma": "69933b86"
+   }
+  }
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "exported": "2026-09-18T19:45:13+00:00",
+ "data_sha": "64b24e8-dirty",
+ "variants": {
+  "color-captions": {
+   "pages": [
+    {
+     "file": "color-captions/page-1.30ac8529.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "klaster",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "5761c8d6"
+      },
+      {
+       "panel_id": "odchod",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "6b3d74d2"
+      },
+      {
+       "panel_id": "sama",
+       "box": {
+        "x": 48.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "5b8099ab"
+      },
+      {
+       "panel_id": "hudba",
+       "box": {
+        "x": 428.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "a6552985"
+      }
+     ]
+    },
+    {
+     "file": "color-captions/page-2.9c65414f.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "zed",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 744.0,
+        "h": 476.2
+       },
+       "version": "a0b88c5d"
+      },
+      {
+       "panel_id": "jeslicky",
+       "box": {
+        "x": 48.0,
+        "y": 540.2,
+        "w": 364.0,
+        "h": 269.4
+       },
+       "version": "752a55be"
+      },
+      {
+       "panel_id": "chuderka",
+       "box": {
+        "x": 428.0,
+        "y": 540.2,
+        "w": 364.0,
+        "h": 269.4
+       },
+       "version": "62af880b"
+      },
+      {
+       "panel_id": "dukaz",
+       "box": {
+        "x": 48.0,
+        "y": 825.6,
+        "w": 364.0,
+        "h": 314.4
+       },
+       "version": "47ff8dae"
+      },
+      {
+       "panel_id": "televize",
+       "box": {
+        "x": 428.0,
+        "y": 825.6,
+        "w": 364.0,
+        "h": 314.4
+       },
+       "version": "c5eabdb0"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "klaster": "5761c8d6",
+    "odchod": "6b3d74d2",
+    "sama": "5b8099ab",
+    "hudba": "a6552985",
+    "zed": "a0b88c5d",
+    "jeslicky": "752a55be",
+    "chuderka": "62af880b",
+    "dukaz": "47ff8dae",
+    "televize": "c5eabdb0"
+   }
+  },
+  "bw-captions": {
+   "pages": [
+    {
+     "file": "bw-captions/page-1.a8014916.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "klaster",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "e4df97d2"
+      },
+      {
+       "panel_id": "odchod",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "fb99b029"
+      },
+      {
+       "panel_id": "sama",
+       "box": {
+        "x": 48.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "a48ad8a3"
+      },
+      {
+       "panel_id": "hudba",
+       "box": {
+        "x": 428.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "e7c646cc"
+      }
+     ]
+    },
+    {
+     "file": "bw-captions/page-2.ec9055d4.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "zed",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 744.0,
+        "h": 538.0
+       },
+       "version": "e26b42fe"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "klaster": "e4df97d2",
+    "odchod": "fb99b029",
+    "sama": "a48ad8a3",
+    "hudba": "e7c646cc",
+    "zed": "e26b42fe"
+   }
+  }
+ }
+}
