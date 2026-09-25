@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Vánoce, o které nepřišla</title>
+<style>
+:root {
+  --paper: #faf6f0; --ink: #3b322a; --mute: #85786b; --line: #e2d8cc;
+  --warm: #b86b3a; --warm-bg: #fbeee2; --grey: #5e5e5e; --grey-bg: #ececea;
+  --ok: #4f7a45; --bad: #b3453c;
+  --accent: var(--warm); --accent-bg: var(--warm-bg);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); color: var(--ink);
+  font: 17px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+body { padding-inline: 16px; padding-block: 0 48px; }
+button { font: inherit; cursor: pointer; }
+[hidden] { display: none !important; }
+
+header.top { max-width: 900px; margin: 0 auto; padding-block: 18px 6px; }
+header.top h1 { font-size: 1.35rem; margin: 0 0 2px; }
+header.top p { margin: 0; color: var(--mute); font-size: .95rem; }
+
+.switch { position: sticky; top: 0; z-index: 5; background: var(--paper);
+  padding-block: 10px; max-width: 900px; margin: 0 auto; }
+.switch div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.switch button { padding: 12px 8px; border: 2px solid var(--line); border-radius: 12px;
+  background: #fff; color: var(--ink); font-weight: 600; font-size: 1.05rem; }
+.switch button[data-v="color-captions"][aria-pressed="true"] { border-color: var(--warm); background: var(--warm-bg); color: var(--warm); }
+.switch button[data-v="bw-captions"][aria-pressed="true"] { border-color: var(--grey); background: var(--grey-bg); color: var(--grey); }
+
+.banner { max-width: 900px; margin: 10px auto; padding: 10px 14px; border-radius: 10px;
+  background: #fff3cd; border: 1px solid #e8d48a; display: flex; gap: 12px;
+  align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.banner.bad { background: #fbe4e1; border-color: #e8b1aa; }
+.banner button { border: 0; border-radius: 8px; padding: 6px 12px; background: var(--ink); color: #fff; }
+
+main { max-width: 900px; margin: 0 auto; }
+.page { position: relative; margin: 14px 0 26px; background: #fff;
+  box-shadow: 0 1px 6px rgba(60, 40, 20, .15); }
+.page img { display: block; width: 100%; height: 100%; }
+.pno { text-align: center; color: var(--mute); font-size: .85rem; margin-top: -18px; }
+.hot { position: absolute; border: 0; padding: 0; background: transparent; border-radius: 4px; }
+.hot:hover, .hot:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px;
+  background: color-mix(in srgb, var(--accent) 8%, transparent); }
+.hot .badge { position: absolute; top: 6px; right: 6px; min-width: 26px; height: 26px;
+  padding: 0 6px; border-radius: 13px; background: var(--ok); color: #fff;
+  font-size: .8rem; font-weight: 700; line-height: 26px; text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3); }
+
+dialog { border: 0; padding: 0; background: #fff; color: var(--ink);
+  border-top: 6px solid var(--accent); box-shadow: 0 0 30px rgba(0, 0, 0, .25); }
+dialog::backdrop { background: rgba(40, 30, 20, .35); }
+dialog .in { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+dialog header { display: flex; align-items: start; justify-content: space-between; gap: 8px; }
+dialog h2 { margin: 0; font-size: 1.1rem; }
+dialog h2 span { color: var(--accent); }
+dialog .close { border: 0; background: none; font-size: 1.6rem; line-height: 1; color: var(--mute); padding: 0 4px; }
+.zoom { margin: 0 auto; max-width: 100%; background-repeat: no-repeat; background-color: var(--accent-bg);
+  border-radius: 6px; }
+textarea { width: 100%; min-height: 7em; font: inherit; padding: 10px; border-radius: 8px;
+  border: 1px solid var(--line); resize: vertical; }
+textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.send { border: 0; border-radius: 10px; padding: 10px 22px; background: var(--accent); color: #fff; font-weight: 600; }
+.send:disabled { opacity: .55; cursor: default; }
+.status { font-size: .95rem; }
+.status.ok { color: var(--ok); } .status.bad { color: var(--bad); }
+.note { color: var(--mute); font-size: .85rem; margin: 0; }
+
+@media (max-width: 719px) {
+  dialog { width: 100%; max-width: 100%; max-height: 92vh; margin: auto 0 0; border-radius: 16px 16px 0 0; }
+}
+@media (min-width: 720px) {
+  dialog { width: min(440px, 45vw); max-width: none; height: 100vh; max-height: 100vh;
+    margin: 0 0 0 auto; border-top: 0; border-left: 6px solid var(--accent); }
+}
+</style>
+</head>
+<body>
+<script type="application/json" id="data">{"data_sha": "64b24e8-dirty", "endpoint": "https://script.google.com/macros/s/AKfycbzwJety6S3hyW8QOsJp3A39ECxG1KQXOeHavriJ-u6yV3ZUKjxuK0DSdoBNIOlAPvGqJg/exec", "exported": "2026-09-18T19:45:13+00:00", "slug": "vanoce-o-ktere-neprisla", "title": "V\u00e1noce, o kter\u00e9 nep\u0159i\u0161la", "variants": {"bw-captions": {"pages": [{"file": "bw-captions/page-1.a8014916.png", "height": 1188.0, "panels": [{"box": {"h": 314.7, "w": 364.0, "x": 48.0, "y": 88.0}, "panel_id": "klaster", "version": "e4df97d2"}, {"box": {"h": 314.7, "w": 364.0, "x": 428.0, "y": 88.0}, "panel_id": "odchod", "version": "fb99b029"}, {"box": {"h": 314.7, "w": 364.0, "x": 48.0, "y": 418.7}, "panel_id": "sama", "version": "a48ad8a3"}, {"box": {"h": 314.7, "w": 364.0, "x": 428.0, "y": 418.7}, "panel_id": "hudba", "version": "e7c646cc"}], "width": 840.0}, {"file": "bw-captions/page-2.ec9055d4.png", "height": 1188.0, "panels": [{"box": {"h": 538.0, "w": 744.0, "x": 48.0, "y": 48.0}, "panel_id": "zed", "version": "e26b42fe"}], "width": 840.0}], "panels": {"hudba": "e7c646cc", "klaster": "e4df97d2", "odchod": "fb99b029", "sama": "a48ad8a3", "zed": "e26b42fe"}}, "color-captions": {"pages": [{"file": "color-captions/page-1.30ac8529.png", "height": 1188.0, "panels": [{"box": {"h": 314.7, "w": 364.0, "x": 48.0, "y": 88.0}, "panel_id": "klaster", "version": "5761c8d6"}, {"box": {"h": 314.7, "w": 364.0, "x": 428.0, "y": 88.0}, "panel_id": "odchod", "version": "6b3d74d2"}, {"box": {"h": 314.7, "w": 364.0, "x": 48.0, "y": 418.7}, "panel_id": "sama", "version": "5b8099ab"}, {"box": {"h": 314.7, "w": 364.0, "x": 428.0, "y": 418.7}, "panel_id": "hudba", "version": "a6552985"}], "width": 840.0}, {"file": "color-captions/page-2.9c65414f.png", "height": 1188.0, "panels": [{"box": {"h": 476.2, "w": 744.0, "x": 48.0, "y": 48.0}, "panel_id": "zed", "version": "a0b88c5d"}, {"box": {"h": 269.4, "w": 364.0, "x": 48.0, "y": 540.2}, "panel_id": "jeslicky", "version": "752a55be"}, {"box": {"h": 269.4, "w": 364.0, "x": 428.0, "y": 540.2}, "panel_id": "chuderka", "version": "62af880b"}, {"box": {"h": 314.4, "w": 364.0, "x": 48.0, "y": 825.6}, "panel_id": "dukaz", "version": "47ff8dae"}, {"box": {"h": 314.4, "w": 364.0, "x": 428.0, "y": 825.6}, "panel_id": "televize", "version": "c5eabdb0"}], "width": 840.0}], "panels": {"chuderka": "62af880b", "dukaz": "47ff8dae", "hudba": "a6552985", "jeslicky": "752a55be", "klaster": "5761c8d6", "odchod": "6b3d74d2", "sama": "5b8099ab", "televize": "c5eabdb0", "zed": "a0b88c5d"}}}}</script>
+
+<header class="top">
+  <h1>Vánoce, o které nepřišla</h1>
+  <p id="intro"></p>
+</header>
+<nav class="switch" id="switch" hidden><div></div></nav>
+<div class="banner bad" id="nokey" hidden></div>
+<div class="banner" id="fresh" hidden><span></span><button type="button"></button></div>
+<main id="pages"></main>
+
+<dialog id="box">
+  <div class="in">
+    <header>
+      <h2 id="box-title"></h2>
+      <button class="close" type="button" id="box-close">×</button>
+    </header>
+    <div class="zoom" id="zoom" role="img"></div>
+    <textarea id="text" maxlength="2000"></textarea>
+    <div class="row">
+      <button class="send" type="button" id="send"></button>
+      <span class="status" id="status" aria-live="polite"></span>
+    </div>
+    <p class="note" id="note"></p>
+  </div>
+</dialog>
+
+<script>
+(() => {
+const T = {
+  intro: 'Klikněte na panel, ke kterému chcete něco napsat.',
+  variants: {'color-captions': 'Barevná verze', 'bw-captions': 'Omalovánka'},
+  heading: n => `Komentář k panelu ${n} · `,
+  page: n => `strana ${n}`,
+  panel: n => `Panel ${n}`,
+  placeholder: 'Co tu změnit? Text, obrázek, bublina…',
+  send: 'Odeslat',
+  sending: 'Odesílám…',
+  sent: 'odesláno ✓',
+  failed: 'neodesláno, zkuste to znovu',
+  empty: 'Nejdřív něco napište.',
+  more: 'K panelu můžete poslat i víc komentářů.',
+  sentCount: n => n === 1 ? 'odeslán 1 komentář' : `odesláno komentářů: ${n}`,
+  nokey: 'Odkaz je neúplný, komentáře nepůjde odeslat. Použijte prosím celý odkaz ze zprávy.',
+  fresh: 'Je k dispozici novější verze.',
+  reload: 'Načíst znovu',
+  close: 'Zavřít',
+};
+
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = id => document.getElementById(id);
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch { /* private mode */ } },
+  del(k) { try { localStorage.removeItem(k); } catch { /* private mode */ } },
+};
+const key = new URLSearchParams(location.hash.slice(1)).get('k') || '';
+const canSend = Boolean(key && D.endpoint);
+const variants = Object.keys(T.variants).filter(v => v in D.variants);  // tojson sorts keys
+const pages = $('pages');
+let variant = null;
+let current = null;  // the panel open in the dialog: {page, pageNo, num, p, hot}
+
+$('intro').textContent = T.intro;
+$('fresh').querySelector('span').textContent = T.fresh;
+$('fresh').querySelector('button').textContent = T.reload;
+$('fresh').querySelector('button').onclick = () => location.reload();
+$('send').textContent = T.send;
+$('text').placeholder = T.placeholder;
+$('box-close').title = T.close;
+$('box-close').setAttribute('aria-label', T.close);
+$('note').textContent = T.more;
+if (!canSend) { $('nokey').textContent = T.nokey; $('nokey').hidden = false; $('send').hidden = true; }
+
+const itemKey = (kind, p) => ['review', kind, D.slug, variant, p.panel_id, p.version].join('/');
+const sentCount = p => Number(store.get(itemKey('sent', p)) || 0);
+
+// --- variant switch ----------------------------------------------------------
+if (variants.length > 1) {
+  const div = $('switch').firstElementChild;
+  for (const v of variants) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.dataset.v = v; b.textContent = T.variants[v];
+    b.onclick = () => show(v, true);
+    div.append(b);
+  }
+  $('switch').hidden = false;
+}
+
+function anchor() {
+  // the page at the top of the viewport and how far into it we are
+  const els = [...pages.children].filter(e => e.classList.contains('page'));
+  for (const [i, el] of els.entries()) {
+    const r = el.getBoundingClientRect();
+    if (r.bottom > 0) return {i, f: Math.max(0, -r.top) / r.height};
+  }
+  return null;
+}
+
+function show(v, keepScroll) {
+  if (!variants.includes(v)) v = variants[0];
+  const at = keepScroll ? anchor() : null;
+  variant = v;
+  document.documentElement.style.setProperty('--accent', `var(--${v.startsWith('bw') ? 'grey' : 'warm'})`);
+  document.documentElement.style.setProperty('--accent-bg', `var(--${v.startsWith('bw') ? 'grey' : 'warm'}-bg)`);
+  store.set(`review/variant/${D.slug}`, v);
+  const url = new URL(location.href);
+  url.searchParams.set('v', v);
+  history.replaceState(null, '', url);
+  for (const b of $('switch').querySelectorAll('button')) b.setAttribute('aria-pressed', String(b.dataset.v === v));
+  render();
+  if (at) {
+    const els = [...pages.querySelectorAll('.page')];
+    const el = els[Math.min(at.i, els.length - 1)];
+    if (el) window.scrollTo(0, el.getBoundingClientRect().top + scrollY + at.f * el.offsetHeight);
+  }
+}
+
+// --- pages and hotspots ------------------------------------------------------
+function render() {
+  pages.replaceChildren();
+  let num = 0;
+  D.variants[variant].pages.forEach((page, pi) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'page';
+    wrap.style.aspectRatio = `${page.width} / ${page.height}`;
+    const img = document.createElement('img');
+    img.src = page.file; img.alt = T.page(pi + 1); img.decoding = 'async';
+    if (pi > 1) img.loading = 'lazy';
+    wrap.append(img);
+    for (const p of page.panels) {
+      num += 1;
+      const n = num, b = p.box;
+      const hot = document.createElement('button');
+      hot.type = 'button'; hot.className = 'hot';
+      hot.setAttribute('aria-label', T.panel(n));
+      Object.assign(hot.style, {
+        left: `${b.x / page.width * 100}%`, top: `${b.y / page.height * 100}%`,
+        width: `${b.w / page.width * 100}%`, height: `${b.h / page.height * 100}%`,
+      });
+      hot.onclick = () => open(page, pi + 1, n, p, hot);
+      badge(hot, p);
+      wrap.append(hot);
+    }
+    pages.append(wrap);
+    const label = document.createElement('div');
+    label.className = 'pno'; label.textContent = T.page(pi + 1);
+    pages.append(label);
+  });
+}
+
+function badge(hot, p) {
+  hot.querySelector('.badge')?.remove();
+  const n = sentCount(p);
+  if (!n) return;
+  const s = document.createElement('span');
+  s.className = 'badge'; s.textContent = n > 1 ? `✓ ${n}` : '✓'; s.title = T.sentCount(n);
+  hot.append(s);
+}
+
+// --- the comment box ---------------------------------------------------------
+function open(page, pageNo, num, p, hot) {
+  current = {page, pageNo, num, p, hot};
+  const b = p.box;
+  $('box-title').textContent = T.heading(num);
+  const v = document.createElement('span');
+  v.textContent = T.variants[variant];
+  $('box-title').append(v);
+  const z = $('zoom');
+  z.style.aspectRatio = `${b.w} / ${b.h}`;
+  z.style.width = `min(100%, ${45 * b.w / b.h}vh)`;  // tall panels don't push the text off screen
+  z.style.backgroundImage = `url("${page.file}")`;
+  z.style.backgroundSize = `${page.width / b.w * 100}% ${page.height / b.h * 100}%`;
+  const px = page.width - b.w, py = page.height - b.h;
+  z.style.backgroundPosition = `${px > 0 ? b.x / px * 100 : 0}% ${py > 0 ? b.y / py * 100 : 0}%`;
+  $('text').value = store.get(itemKey('draft', p)) || '';
+  const n = sentCount(p);
+  setStatus(n ? T.sentCount(n) : '', 'ok');
+  $('send').disabled = false;
+  $('box').showModal();
+  if (matchMedia('(min-width: 720px)').matches) $('text').focus();
+}
+
+function setStatus(text, cls) {
+  $('status').textContent = text;
+  $('status').className = `status ${cls || ''}`;
+}
+
+$('box-close').onclick = () => $('box').close();
+$('box').addEventListener('click', e => { if (e.target === $('box')) $('box').close(); });
+$('box').addEventListener('close', () => { current?.hot.focus(); current = null; });
+$('text').addEventListener('input', () => {
+  if (!current) return;
+  const k = itemKey('draft', current.p);
+  $('text').value ? store.set(k, $('text').value) : store.del(k);
+  setStatus('');
+});
+
+$('send').onclick = async () => {
+  if (!current || !canSend) return;
+  const c = current, comment = $('text').value.trim();
+  if (!comment) { setStatus(T.empty, 'bad'); return; }
+  $('send').disabled = true;
+  setStatus(T.sending);
+  const body = {
+    k: key, slug: D.slug, variant, page: c.pageNo, panel_id: c.p.panel_id,
+    panel_version: c.p.version, data_sha: D.data_sha || '', comment,
+  };
+  let ok = false;
+  try {
+    // text/plain body: a "simple" request, no preflight to Apps Script
+    const res = await fetch(D.endpoint, {method: 'POST', body: JSON.stringify(body)});
+    ok = Boolean((await res.json()).ok);
+  } catch { ok = false; }
+  $('send').disabled = false;
+  if (!ok) { setStatus(T.failed, 'bad'); return; }
+  store.set(itemKey('sent', c.p), String(sentCount(c.p) + 1));
+  store.del(itemKey('draft', c.p));
+  if (current === c) { $('text').value = ''; setStatus(T.sent, 'ok'); }
+  if (c.hot.isConnected) badge(c.hot, c.p);  // gone if the variant was switched
+};
+
+// --- freshness ---------------------------------------------------------------
+async function checkFresh() {
+  try {
+    const res = await fetch(`version.json?t=${Date.now()}`, {cache: 'no-store'});
+    const v = await res.json();
+    if (v.exported !== D.exported) $('fresh').hidden = false;
+  } catch { /* offline or opened from disk */ }
+}
+document.addEventListener('visibilitychange', () => { if (!document.hidden) checkFresh(); });
+
+const wanted = new URL(location.href).searchParams.get('v') || store.get(`review/variant/${D.slug}`);
+show(wanted, false);
+checkFresh();
+})();
+</script>
+</body>
+</html>
