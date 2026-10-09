@@ -1,0 +1,127 @@
+{
+ "exported": "2026-10-09T06:47:25+00:00",
+ "data_sha": "cbbae82-dirty",
+ "draft": false,
+ "variants": {
+  "color-captions": {
+   "pages": [
+    {
+     "file": "color-captions/page-1.46973bc5.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "princezna",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "aee1de5e"
+      },
+      {
+       "panel_id": "na-frantisku",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "90a1e30e"
+      },
+      {
+       "panel_id": "san-damiano",
+       "box": {
+        "x": 48.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "174b9984"
+      },
+      {
+       "panel_id": "pres-hory",
+       "box": {
+        "x": 428.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "d92cd018"
+      },
+      {
+       "panel_id": "prvni-dopis",
+       "box": {
+        "x": 48.0,
+        "y": 749.3,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "86df53a8"
+      },
+      {
+       "panel_id": "jablko",
+       "box": {
+        "x": 428.0,
+        "y": 749.3,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "23403cd2"
+      }
+     ]
+    },
+    {
+     "file": "color-captions/page-2.55229fb5.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "ne-ze-zeleza",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 345.0
+       },
+       "version": "23069de9"
+      },
+      {
+       "panel_id": "polovina-duse",
+       "box": {
+        "x": 428.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 345.0
+       },
+       "version": "459b040c"
+      },
+      {
+       "panel_id": "klice",
+       "box": {
+        "x": 48.0,
+        "y": 409.0,
+        "w": 744.0,
+        "h": 538.0
+       },
+       "version": "50cda7cc"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "princezna": "aee1de5e",
+    "na-frantisku": "90a1e30e",
+    "san-damiano": "174b9984",
+    "pres-hory": "d92cd018",
+    "prvni-dopis": "86df53a8",
+    "jablko": "23403cd2",
+    "ne-ze-zeleza": "23069de9",
+    "polovina-duse": "459b040c",
+    "klice": "50cda7cc"
+   },
+   "pdf": "color-captions/anezka-dopisy-pres-hory-color-captions.78eca1d3.pdf"
+  }
+ }
+}

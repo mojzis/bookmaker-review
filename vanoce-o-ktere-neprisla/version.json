@@ -1,0 +1,246 @@
+{
+ "exported": "2026-10-05T06:20:14+00:00",
+ "data_sha": "b543b0e",
+ "variants": {
+  "color-captions": {
+   "pages": [
+    {
+     "file": "color-captions/page-1.0ae94fe0.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "klaster",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "31223cb2"
+      },
+      {
+       "panel_id": "odchod",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "980d7778"
+      },
+      {
+       "panel_id": "sama",
+       "box": {
+        "x": 48.0,
+        "y": 397.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "56040cc0"
+      },
+      {
+       "panel_id": "hudba",
+       "box": {
+        "x": 428.0,
+        "y": 397.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "a05ed2f4"
+      },
+      {
+       "panel_id": "zed",
+       "box": {
+        "x": 48.0,
+        "y": 706.0,
+        "w": 744.0,
+        "h": 434.0
+       },
+       "version": "641fdd9a"
+      }
+     ]
+    },
+    {
+     "file": "color-captions/page-2.7c008ca0.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "jeslicky",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 744.0,
+        "h": 375.0
+       },
+       "version": "ebeb7a90"
+      },
+      {
+       "panel_id": "chuderka",
+       "box": {
+        "x": 48.0,
+        "y": 439.0,
+        "w": 364.0,
+        "h": 254.7
+       },
+       "version": "6896237e"
+      },
+      {
+       "panel_id": "dukaz",
+       "box": {
+        "x": 428.0,
+        "y": 439.0,
+        "w": 364.0,
+        "h": 254.7
+       },
+       "version": "03c26ff5"
+      },
+      {
+       "panel_id": "televize",
+       "box": {
+        "x": 48.0,
+        "y": 709.6,
+        "w": 744.0,
+        "h": 430.4
+       },
+       "version": "19163075"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "klaster": "31223cb2",
+    "odchod": "980d7778",
+    "sama": "56040cc0",
+    "hudba": "a05ed2f4",
+    "zed": "641fdd9a",
+    "jeslicky": "ebeb7a90",
+    "chuderka": "6896237e",
+    "dukaz": "03c26ff5",
+    "televize": "19163075"
+   },
+   "pdf": "color-captions/vanoce-o-ktere-neprisla-color-captions.64eda980.pdf"
+  },
+  "bw-captions": {
+   "pages": [
+    {
+     "file": "bw-captions/page-1.3f02a752.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "klaster",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "98111772"
+      },
+      {
+       "panel_id": "odchod",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "17b89712"
+      },
+      {
+       "panel_id": "sama",
+       "box": {
+        "x": 48.0,
+        "y": 397.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "a4812a62"
+      },
+      {
+       "panel_id": "hudba",
+       "box": {
+        "x": 428.0,
+        "y": 397.0,
+        "w": 364.0,
+        "h": 293.0
+       },
+       "version": "302be2fa"
+      },
+      {
+       "panel_id": "zed",
+       "box": {
+        "x": 48.0,
+        "y": 706.0,
+        "w": 744.0,
+        "h": 434.0
+       },
+       "version": "18bf497f"
+      }
+     ]
+    },
+    {
+     "file": "bw-captions/page-2.bbaa1b31.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "jeslicky",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 744.0,
+        "h": 375.0
+       },
+       "version": "dad9f618"
+      },
+      {
+       "panel_id": "chuderka",
+       "box": {
+        "x": 48.0,
+        "y": 439.0,
+        "w": 364.0,
+        "h": 254.7
+       },
+       "version": "9327a936"
+      },
+      {
+       "panel_id": "dukaz",
+       "box": {
+        "x": 428.0,
+        "y": 439.0,
+        "w": 364.0,
+        "h": 254.7
+       },
+       "version": "36058778"
+      },
+      {
+       "panel_id": "televize",
+       "box": {
+        "x": 48.0,
+        "y": 709.6,
+        "w": 744.0,
+        "h": 430.4
+       },
+       "version": "7cfbb56f"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "klaster": "98111772",
+    "odchod": "17b89712",
+    "sama": "a4812a62",
+    "hudba": "302be2fa",
+    "zed": "18bf497f",
+    "jeslicky": "dad9f618",
+    "chuderka": "9327a936",
+    "dukaz": "36058778",
+    "televize": "7cfbb56f"
+   },
+   "pdf": "bw-captions/vanoce-o-ktere-neprisla-bw-captions.1f20f12e.pdf"
+  }
+ }
+}
