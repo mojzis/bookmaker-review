@@ -1,0 +1,127 @@
+{
+ "exported": "2026-10-06T05:13:17+00:00",
+ "data_sha": "a2dd3ee-dirty",
+ "draft": true,
+ "variants": {
+  "draft": {
+   "pages": [
+    {
+     "file": "draft/page-1.a6938d3b.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "dva-chlapci",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "e8df2e9f"
+      },
+      {
+       "panel_id": "dopis",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "21b51dc1"
+      },
+      {
+       "panel_id": "na-pocatku",
+       "box": {
+        "x": 48.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "11eed2b0"
+      },
+      {
+       "panel_id": "rec-lidu",
+       "box": {
+        "x": 428.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "87ae8e94"
+      },
+      {
+       "panel_id": "skola",
+       "box": {
+        "x": 48.0,
+        "y": 764.3,
+        "w": 364.0,
+        "h": 299.7
+       },
+       "version": "94ac8db3"
+      },
+      {
+       "panel_id": "tri-jazyky",
+       "box": {
+        "x": 428.0,
+        "y": 764.3,
+        "w": 364.0,
+        "h": 299.7
+       },
+       "version": "04da99c2"
+      }
+     ]
+    },
+    {
+     "file": "draft/page-2.6184082b.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "knihy-na-oltari",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "16174613"
+      },
+      {
+       "panel_id": "dva-voli",
+       "box": {
+        "x": 428.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "e3737f27"
+      },
+      {
+       "panel_id": "brazda",
+       "box": {
+        "x": 48.0,
+        "y": 378.7,
+        "w": 744.0,
+        "h": 568.0
+       },
+       "version": "a50c63ec"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "dva-chlapci": "e8df2e9f",
+    "dopis": "21b51dc1",
+    "na-pocatku": "11eed2b0",
+    "rec-lidu": "87ae8e94",
+    "skola": "94ac8db3",
+    "tri-jazyky": "04da99c2",
+    "knihy-na-oltari": "16174613",
+    "dva-voli": "e3737f27",
+    "brazda": "a50c63ec"
+   },
+   "pdf": "draft/cyril-a-metodej-pismena-pro-slovany-draft.4c89f676.pdf"
+  }
+ }
+}
