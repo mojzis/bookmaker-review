@@ -1,0 +1,138 @@
+{
+ "exported": "2026-11-21T21:54:14+00:00",
+ "data_sha": "f0a3b37-dirty",
+ "draft": true,
+ "variants": {
+  "draft": {
+   "pages": [
+    {
+     "file": "draft/page-1.226c7e8e.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "zasnuby",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "641dd761"
+      },
+      {
+       "panel_id": "dilna",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "457531cc"
+      },
+      {
+       "panel_id": "synagoga",
+       "box": {
+        "x": 48.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "30ccddbf"
+      },
+      {
+       "panel_id": "sen",
+       "box": {
+        "x": 428.0,
+        "y": 418.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "74d7f225"
+      },
+      {
+       "panel_id": "svatba",
+       "box": {
+        "x": 48.0,
+        "y": 749.3,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "a35d60a1"
+      },
+      {
+       "panel_id": "soupis",
+       "box": {
+        "x": 428.0,
+        "y": 749.3,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "17144b9a"
+      }
+     ]
+    },
+    {
+     "file": "draft/page-2.7e207822.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "cesta",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 344.7
+       },
+       "version": "5ad4795e"
+      },
+      {
+       "panel_id": "nemisto",
+       "box": {
+        "x": 428.0,
+        "y": 48.0,
+        "w": 364.0,
+        "h": 344.7
+       },
+       "version": "cb4ac57e"
+      },
+      {
+       "panel_id": "egypt-sen",
+       "box": {
+        "x": 48.0,
+        "y": 408.7,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "52a65093"
+      },
+      {
+       "panel_id": "egypt",
+       "box": {
+        "x": 428.0,
+        "y": 408.7,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "c17dfb19"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "zasnuby": "641dd761",
+    "dilna": "457531cc",
+    "synagoga": "30ccddbf",
+    "sen": "74d7f225",
+    "svatba": "a35d60a1",
+    "soupis": "17144b9a",
+    "cesta": "5ad4795e",
+    "nemisto": "cb4ac57e",
+    "egypt-sen": "52a65093",
+    "egypt": "c17dfb19"
+   },
+   "pdf": "draft/josef-muz-ktery-naslouchal-draft.82b2ee39.pdf"
+  }
+ }
+}

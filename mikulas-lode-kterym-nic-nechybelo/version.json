@@ -1,0 +1,253 @@
+{
+ "exported": "2026-11-25T01:15:45+00:00",
+ "data_sha": "f302081",
+ "draft": false,
+ "variants": {
+  "color-captions": {
+   "pages": [
+    {
+     "file": "color-captions/page-1.2af3e517.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "hlad",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "878ece64"
+      },
+      {
+       "panel_id": "sypka",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "6e0a3cd4"
+      },
+      {
+       "panel_id": "plachty",
+       "box": {
+        "x": 48.0,
+        "y": 433.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "0dd16663"
+      },
+      {
+       "panel_id": "cisarovo-obili",
+       "box": {
+        "x": 428.0,
+        "y": 433.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "006d1273"
+      },
+      {
+       "panel_id": "slib",
+       "box": {
+        "x": 48.0,
+        "y": 764.3,
+        "w": 364.0,
+        "h": 291.5
+       },
+       "version": "3971109d"
+      },
+      {
+       "panel_id": "pytle",
+       "box": {
+        "x": 428.0,
+        "y": 764.3,
+        "w": 364.0,
+        "h": 291.5
+       },
+       "version": "599f94f2"
+      }
+     ]
+    },
+    {
+     "file": "color-captions/page-2.1237b63f.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "mereni",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 242.7,
+        "h": 470.2
+       },
+       "version": "e5d5f629"
+      },
+      {
+       "panel_id": "chleba",
+       "box": {
+        "x": 306.7,
+        "y": 48.0,
+        "w": 485.3,
+        "h": 470.2
+       },
+       "version": "0db0053b"
+      },
+      {
+       "panel_id": "bari",
+       "box": {
+        "x": 48.0,
+        "y": 534.2,
+        "w": 744.0,
+        "h": 553.9
+       },
+       "version": "3fe2f943"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "hlad": "878ece64",
+    "sypka": "6e0a3cd4",
+    "plachty": "0dd16663",
+    "cisarovo-obili": "006d1273",
+    "slib": "3971109d",
+    "pytle": "599f94f2",
+    "mereni": "e5d5f629",
+    "chleba": "0db0053b",
+    "bari": "3fe2f943"
+   },
+   "pdf": "color-captions/mikulas-lode-kterym-nic-nechybelo-color-captions.5ae49fdd.pdf"
+  },
+  "bw-captions": {
+   "pages": [
+    {
+     "file": "bw-captions/page-1.0f14a293.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "hlad",
+       "box": {
+        "x": 48.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "8475b76e"
+      },
+      {
+       "panel_id": "sypka",
+       "box": {
+        "x": 428.0,
+        "y": 88.0,
+        "w": 364.0,
+        "h": 329.7
+       },
+       "version": "fddb6e29"
+      },
+      {
+       "panel_id": "plachty",
+       "box": {
+        "x": 48.0,
+        "y": 433.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "2a300a3a"
+      },
+      {
+       "panel_id": "cisarovo-obili",
+       "box": {
+        "x": 428.0,
+        "y": 433.7,
+        "w": 364.0,
+        "h": 314.7
+       },
+       "version": "6d5fbe59"
+      },
+      {
+       "panel_id": "slib",
+       "box": {
+        "x": 48.0,
+        "y": 764.3,
+        "w": 364.0,
+        "h": 291.5
+       },
+       "version": "e39acd8c"
+      },
+      {
+       "panel_id": "pytle",
+       "box": {
+        "x": 428.0,
+        "y": 764.3,
+        "w": 364.0,
+        "h": 291.5
+       },
+       "version": "ff253008"
+      }
+     ]
+    },
+    {
+     "file": "bw-captions/page-2.8c951158.png",
+     "width": 840.0,
+     "height": 1188.0,
+     "panels": [
+      {
+       "panel_id": "mereni",
+       "box": {
+        "x": 48.0,
+        "y": 48.0,
+        "w": 242.7,
+        "h": 470.2
+       },
+       "version": "6d5b0ef8"
+      },
+      {
+       "panel_id": "chleba",
+       "box": {
+        "x": 306.7,
+        "y": 48.0,
+        "w": 485.3,
+        "h": 470.2
+       },
+       "version": "88faa390"
+      },
+      {
+       "panel_id": "bari",
+       "box": {
+        "x": 48.0,
+        "y": 534.2,
+        "w": 744.0,
+        "h": 553.9
+       },
+       "version": "35cdbc05"
+      }
+     ]
+    }
+   ],
+   "panels": {
+    "hlad": "8475b76e",
+    "sypka": "fddb6e29",
+    "plachty": "2a300a3a",
+    "cisarovo-obili": "6d5fbe59",
+    "slib": "e39acd8c",
+    "pytle": "ff253008",
+    "mereni": "6d5b0ef8",
+    "chleba": "88faa390",
+    "bari": "35cdbc05"
+   },
+   "pdf": "bw-captions/mikulas-lode-kterym-nic-nechybelo-bw-captions.1f808a70.pdf"
+  }
+ },
+ "onepager": {
+  "file": "onepager/onepager.9f040175.png",
+  "pdf": "onepager/mikulas-lode-kterym-nic-nechybelo-onepager.d0c6d5f5.pdf",
+  "width": 592,
+  "height": 840
+ }
+}
